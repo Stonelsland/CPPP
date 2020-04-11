@@ -3,4 +3,4 @@ project(test)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CPPP practice.cpp)
+add_executable(test bubble_sort.cpp)

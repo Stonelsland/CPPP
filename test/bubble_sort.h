@@ -2,15 +2,15 @@
 // Created by NOAH on 2020/4/11.
 //
 
-#ifndef TEST_PRACTICE_H
-#define TEST_PRACTICE_H
+#ifndef TEST_BUBBLE_SORT_H
+#define TEST_BUBBLE_SORT_H
 
 #include <iostream>
 #include <vector>
 using namespace std;
-class practice {
+class bubble_sort {
 
 };
 
 
-#endif //TEST_PRACTICE_H
+#endif //TEST_BUBBLE_SORT_H
