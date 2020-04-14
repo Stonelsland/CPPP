@@ -11,7 +11,7 @@
 using namespace std;
 
 class fibo_seq {
-public:
+
 };
 
 inline bool is_size_ok(int size){
