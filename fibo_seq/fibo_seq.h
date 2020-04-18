@@ -2,8 +2,8 @@
 // Created by NOAH on 2020/4/11.
 //
 
-#ifndef TEST_FIBO_SEQ_H
-#define TEST_FIBO_SEQ_H
+#ifndef FIBO_SEQ_H
+#define FIBO_SEQ_H
 
 #include <iostream>
 #include <vector>
@@ -45,4 +45,4 @@ inline bool fibo_elem(int pos, int &elem) {
 }
 
 
-#endif //TEST_FIBO_SEQ_H
+#endif //FIBO_SEQ_H

@@ -2,8 +2,8 @@
 // Created by NOAH on 2020/4/13.
 //
 
-#ifndef TEST_TEMPLATE_H
-#define TEST_TEMPLATE_H
+#ifndef TEMPLATE_DEMO_H
+#define TEMPLATE_DEMO_H
 
 #include <iostream>
 #include <vector>
@@ -43,4 +43,4 @@ elemType *find(const elemType *first,
     return 0;
 }
 
-#endif //TEST_TEMPLATE_H
+#endif //TEMPLATE_DEMO_H
