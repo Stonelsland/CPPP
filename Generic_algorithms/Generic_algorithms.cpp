@@ -70,16 +70,50 @@ int main() {
     cout << endl << "共有 " << count_occurs(vec, 10) << " 个";
 
     const int elem_size = 8;
-    int ia4[elem_size] = {12,8,43,0,6,21,3,7};
-    vector<int> ivec1(ia4,ia4+elem_size);
+    int ia4[elem_size] = {12, 8, 43, 0, 6, 21, 3, 7};
+    vector<int> ivec1(ia4, ia4 + elem_size);
 
     int ia5[elem_size];
     vector<int> ivec2(elem_size);
 
     cout << "filtering intager array for values less than 8 \n";
-    filter(ia4,ia4+elem_size,ia5,elem_size,less<int>());
+    filter(ia4, ia4 + elem_size, ia5, elem_size, less<int>());
 
     cout << "filtering intager array for values greater than 8 \n";
-    filter(ivec1.begin(),ivec1.end(),ivec2.begin(),elem_size,greater<int>());
+    filter(ivec1.begin(), ivec1.end(), ivec2.begin(), elem_size, greater<int>());
+
+    // 采用Iterator Inserts 方式
+    vector<int> ivec3;
+    cout << "filtering values greater than 8 by Iterator Inserts \n";
+    filter(ivec1.begin(), ivec1.end(), back_inserter(ivec3), elem_size, greater<int>());
+
+    //使用iostream Iterators
+    string word;
+    vector<string> text;
+    while (cin >> word)
+        text.push_back(word);
+    sort(text.begin(),text.end());
+    for (int i = 0; i < text.size(); ++i) {
+        cout << text[i] << " ";
+    }
+
+    //
+    ifstream in_file("input_file.txt");
+    ofstream out_file("output_file.txt");
+    if (!in_file || !out_file){
+        cerr << "error!"<<endl;
+        return -1;
+    }
+
+    istream_iterator<string> is(in_file);
+    istream_iterator<string> eof;
+
+    vector<string> text;
+    copy(is,eof,back_inserter(text));
+
+    sort(text.begin(),text.end());
+
+    ostream_iterator<string> os(out_file," ");
+    copy(text.begin(),text.end(),os);
 
 }

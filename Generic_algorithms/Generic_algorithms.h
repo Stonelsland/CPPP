@@ -6,8 +6,11 @@
 #define ITERATOR_H
 
 #include <iostream>
-#include <vector>
+#include <fstream>
 #include <list>
+#include <vector>
+#include <string>
+#include <iterator>
 #include <algorithm>
 #include <functional>
 
