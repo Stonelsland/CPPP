@@ -14,4 +14,5 @@
 
 list不支持iterator的偏移运算
 
-<img src="../lafamu.jpg">
+`<img src="../lafamu.jpg">`
+
