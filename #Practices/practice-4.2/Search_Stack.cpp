@@ -36,7 +36,7 @@ int main() {
     Search_Stack searchStack;
     string str;
 
-    while (cin >> str && !searchStack.full())
+    while (cin >> str && !searchStack.full()&&str != "q" )
         searchStack.push(str);
     if (searchStack.empty()) {
         cout << "\n" << "no string";
@@ -50,8 +50,7 @@ int main() {
     cout << "\n" << "Read in " << searchStack.size() << " strings\n";
 
     cout << "\n" << "search: " << endl;
-    cin.clear();
-    cin.sync();
+
     cin >> str;
 
     bool found = searchStack.find(str);
